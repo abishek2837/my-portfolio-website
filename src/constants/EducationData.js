@@ -2,7 +2,7 @@ const EducationData = [
     {
         name: "Bachelor of Engineering",
         image:
-            "/images/education/excelcollege.jpg",
+            "./images/education/excelcollege.jpg",
         schoolOrCollege: "Excel Engineering COLLEGE, India",
         fromTo: "2019 - 2023",
         statusOrPrecentage: "7.2/10",
@@ -11,7 +11,7 @@ const EducationData = [
     {
         name: "Senior Secondary Examination",
         image:
-            "/images/education/greenlandcollege.png",
+            "./images/education/greenlandcollege.png",
         schoolOrCollege: "Greenland Intl. College",
         fromTo: "2016-2018",
         statusOrPrecentage: "68%",
@@ -19,7 +19,7 @@ const EducationData = [
     {
         name: "Secondary Examination",
         image:
-            "/images/education/starschool.jpg",
+            "./images/education/starschool.jpg",
         schoolOrCollege: "Star higher secondary Boarding school",
         fromTo: "2016",
         statusOrPrecentage: "65%",
