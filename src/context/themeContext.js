@@ -9,11 +9,9 @@ const ThemeProvider = ({ children }) => {
     // Toggle Theme
     const setThemeFun = () => {
         if (theme === "dark") {
-            console.log("dark 1");
             setTheme("light");
             localStorage.setItem("myPortfolioProfileTheme", "light");
         } else {
-            console.log("dark 2");
             setTheme("dark");
             localStorage.setItem("myPortfolioProfileTheme", "dark");
         }
@@ -22,7 +20,6 @@ const ThemeProvider = ({ children }) => {
     // Get Theme Value From LocalStorage
     useEffect(() => {
         const getTheme = localStorage.getItem("myPortfolioProfileTheme");
-        console.log(getTheme);
         if (!getTheme) {
             return
         }

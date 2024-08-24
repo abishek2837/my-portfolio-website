@@ -31,7 +31,6 @@ const SendMail = () => {
         },
         body: JSON.stringify(formData),
       });
-      console.log("response is", response);
       // const data = await response.json();
 
       if (response.ok) {
