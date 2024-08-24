@@ -3,6 +3,7 @@ import nodemailer from "nodemailer";
 
 
 export async function POST(request) {
+    console.log(request);
     if (request.method === "POST") {
         const { name, email, subject, message } = await request.json();
 
@@ -36,6 +37,7 @@ export async function POST(request) {
             });
         }
     } else {
+        console.log("request is", request);
         return new Response(JSON.stringify({ error: "Method not allowed" }), {
             status: 405,
             headers: { "Content-Type": "application/json" },
